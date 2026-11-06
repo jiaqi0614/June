@@ -39,6 +39,7 @@ int main() {
             }
         else{
             printf("%d %s %d\n",i + 1,players[i].name,players[i].score);
+            }
     }
 
     return 0;
