@@ -12,7 +12,7 @@ void sort_players(Player arr[],int n){
     Player temp;
 
     for(int i=0;i<n - 1;i++){
-          for(int j=0;j<n - 1 - j;j++){
+          for(int j=0;j<n - 1 - i;j++){
             if(arr[j].score < arr[j + 1].score){
                 temp =arr[j];
                 arr[j] = arr[j + 1];
@@ -33,13 +33,8 @@ int main() {
     }
     sort_players(players,n);
 
-    for(int i = 0;i < n;i++){
-        if(i ==n - 1){
+    for(int i = 0;i < n;i++){  
         printf("%d %s %d",i + 1,players[i].name,players[i].score);
-            }
-        else{
-            printf("%d %s %d\n",i + 1,players[i].name,players[i].score);
-            }
     }
 
     return 0;
