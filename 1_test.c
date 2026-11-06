@@ -34,7 +34,10 @@ int main() {
     sort_players(players,n);
 
     for(int i = 0;i < n;i++){
-        printf("%d %s %d\n",i + 1,players[i].name,players[i].score);
+        if(i == 1){
+        printf("%d %s %d",i + 1,players[i].name,players[i].score);
+            }
+        else{printf("%d %s %d\n",i + 1,players[i].name,players[i].score);
     }
 
     return 0;
