@@ -10,7 +10,7 @@ typedef struct{
 
 void sort_players(Player arr[],int n){
     Player temp;
-
+    int i,j;
     for(int i=0;i<n - 1;i++){
           for(int j=0;j<n - 1 - i;j++){
             if(arr[j].score < arr[j + 1].score){
